@@ -80,5 +80,5 @@ function returnvalue(getArray){
     return getArray[1]
 }
 
-// console.log(returnvalue(mynewArray));
+// console.log(returnvalue(mynewArray));    
 console.log(returnvalue([200,300,400]));
