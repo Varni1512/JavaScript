@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Varni</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const sayvarni = function(){
+        console.log("varni");
+    }
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "varnikumar patel"
+    }
+    //print after 2 second only once 
+    const change = setTimeout(changeText,2000)
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        //stop before the setTimeout -> change ho usse pehle agar click karde to vo stop ho jayega change nhi hoga
+        clearTimeout(change)
+        console.log("stop");
+    })
+</script>
+</html>

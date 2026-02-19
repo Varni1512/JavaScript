@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Varni patel</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    let intervalId = null;
+
+    const sayDate = function () {
+        console.log("varni", Date.now());
+    }
+
+    document.querySelector('#start').addEventListener('click', function () {
+        intervalId = setInterval(sayDate, 2000);
+    });
+
+    document.querySelector('#stop').addEventListener('click', function () {
+        clearInterval(intervalId);
+    });
+</script>
+
+
+</html>
