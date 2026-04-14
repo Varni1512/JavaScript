@@ -29,3 +29,9 @@ let someNumber = 33
 let stringNumber = String(someNumber)
 console.log(stringNumber);
 console.log(typeof stringNumber);
+
+
+/*Coercion -> change type automatically 
+ex. console.log("10" + 5) -> 105  (js + mai string mai convert karta hai)
+    console.log("10" - 5) -> 5    (js -/* ye 3 mai string ko number mai convert karta hai)
+*/
